@@ -36,6 +36,20 @@ The Idle Power Consumption image shows the consumption of all the components of 
 #### Video Tutorial:
 https://youtu.be/UaIIV4CaRA4
 
+## Availability
+You can get the assembled boards in my [Tindie](https://www.tindie.com/products/frapais/nanocell-c3-v20-beta/), [Etsy](https://www.etsy.com/listing/1679895323/nanocell-c3-v2-beta?ref=listings_manager_grid), and [Elecrow](https://www.elecrow.com/nanocell-c3.html) stores. Note that on Elecrow, you will find the newest version 2.1 which improves several aspects of the board.
+
+<a href="https://www.tindie.com/stores/frapais/?ref=offsite_badges&utm_source=sellers_Frapais&utm_medium=badges&utm_campaign=badge_large"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-larges.png" alt="I sell on Tindie" width="200" height="104" allign="left"></a>
+
+## Certifications
+This project is certified by the [Open Source Hardware Association (OSHWA)](https://certification.oshwa.org/gr000008.html)
+
+<img src="https://github.com/Frapais/NanoCell-C3/blob/main/PCB/Certifications/certification-mark-GR000008-stacked.png" alt="Open Source Hardware Association Certification" width="300" allign="left"/>
+
+
+
+
+
 ## Support
 If you find this project useful, please consider supporting me on any of the following platforms:
 * PayPal:
