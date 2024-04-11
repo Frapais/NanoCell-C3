@@ -1,0 +1,59 @@
+esphome:
+  name: nanocell
+  friendly_name: NanoCell
+  includes:
+    - /config/esphome/custom_components/MAX17048_component.h
+  libraries:
+    - "Wire"
+
+esp32:
+  board: esp32-c3-devkitm-1
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "*************************"
+
+ota:
+  password: "*********************"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "NanoCell Fallback Hotspot"
+    password: "***********"
+
+captive_portal:
+
+# Example configuration entry for NanoCell-C3
+i2c:
+  sda: 2
+  scl: 3
+  scan: True
+
+# Example configuration entry
+sensor:
+- platform: custom
+  lambda: |-
+    auto my_sensor = new  MAX17048Sensor();
+    App.register_component(my_sensor);
+    return {my_sensor->voltage_sensor, my_sensor->percentage_sensor, my_sensor->rate_sensor};
+
+  sensors:
+  - name: "Battery Voltage"
+    unit_of_measurement: V
+    accuracy_decimals: 2
+  - name: "Battery Percentage"
+    unit_of_measurement: '%'
+    accuracy_decimals: 2
+  - name: "Discharge Rate"
+    unit_of_measurement: '%/h'
+    accuracy_decimals: 2
