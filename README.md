@@ -1,16 +1,18 @@
 # NanoCell-C3
-This is the repository of my NanoCell-C3 project, which includes an ESP32 development board I made to simplify the creation of small battery-powered devices for use with Home Assistant and ESPHome.
+
+This is the repository of my **NanoCell-C3** project, which includes an ESP32 development board I made to simplify the creation of small battery-powered devices for use with Home Assistant and ESPHome.
+| <img src="https://github.com/Frapais/NanoCell-C3/blob/main/PCB/2024-02-17T16_10_27.754Z-2024-02-04%20004.jpg" alt="Photo 1" width="600"/> | <img src="https://github.com/Frapais/NanoCell-C3/blob/main/PCB/2024-02-17T16_10_27.754Z-2024-02-17%20009.jpg" alt="Photo 2" width="600"/> |
+|-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 
 ## Description
 ### Hardware
-NanoCell-C3 is a development board using an ESP32 microcontroller, intended -but not restricted- to be used with Home Assistant. Its main features are:
-* USB type-C port for charging and uploading firmware
-* Li-ion/Li-po battery management IC
-* Li-ion/Li-po battery charging IC
-* Battery capacity measurement IC, accessible via I2C on pins 2 and 3.
+#### Main Features
+* Li-ion/Li-po battery charging / protection ICs
+* Accurate battery capacity measurement IC, accessible via I2C on pins 2 and 3.
+* USB Type-C port for charging and uploading firmware
 * RESET and BOOT pushbuttons
 * Charging and USB-power LED indicators
-* 2.54mm pin headers breaking out all the pins of ESP32-C3, as well as the USB, battery, and LDO voltage.
+* Breadboard-compatible pin headers breaking out all the pins of ESP32-C3, as well as the USB, battery, and Vcc voltage.
 
 ### Tests
 | Idle Power Consumption: 66.1μA                                                                                                                          | Max Charging Current: 464mA                                                                                         | VCC Output @ 4.2V input: 3.356V                                                                                       | VCC Output @ 3V input: 3.359V                                                                                       |
@@ -30,6 +32,9 @@ The Idle Power Consumption image shows the consumption of all the components of 
 3. Select "Connect" to upload the initialization firmware on the board, and select the correct port from the popup window. (It usually shows up as a "USB JTAG" device).
 4. Wait for the upload to finish, and restart the NanoCell-C3. Now, every time you power on the device, it should connect to your WiFi automatically.
 5. Last step, is to go to your Home Assistant settings, and Configure your newly discovered device (assuming it is powered on and visible on the network).
+
+#### Video Tutorial:
+https://youtu.be/UaIIV4CaRA4
 
 ## Support
 If you find this project useful, please consider supporting me on any of the following platforms:
