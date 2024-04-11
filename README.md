@@ -49,14 +49,16 @@ The NanoCell-C3 board features the MAX17048 battery capacity measurement IC conn
 | SCL      | 3      |
 
 #### Setup process
-Inside the [Home Assistant Setup](https://github.com/Frapais/NanoCell-C3/tree/main/Home%20Assistant%20Setup) folded, you will find a YAML file and a HEADER file.
+Inside the [Home Assistant Setup](https://github.com/Frapais/NanoCell-C3/tree/main/Home%20Assistant%20Setup) folder, you will find a YAML file and a HEADER file.
 * First, you must copy the header file to your Home Assistant under "/config/esphome/custom_components/MAX17048_component.h".
 * Next, you have to create a new ESP32-C3 device from the ESPHome plugin, as described above. (If you haven't already).
 * Inside the corresponding YAML file, you must paste the contents of this repo's [YAML]() file, replacing the "***" with your corresponding values.
-* 
+  
 Your YAML file needs to import the "MAX17048_component.h" file in the "includes" section, as well as the "Wire" library in the "libraries section.
 Next, you can add an i2c sensor using the "custom" platform and include the corresponding "lambda" section to get the values from the MAX17048 Battery Measurement IC.
 
+**Voila!** You can now monitor your battery status from Home Assistant with accuracy! I used Graphana to plot the Li-Ion battery's capacity over time in the following image:
+<img src="https://github.com/Frapais/NanoCell-C3/blob/main/Home%20Assistant%20Setup/428603090_7684237298253773_1654994168547208043_n.jpg" alt="Battery Capacity Plot" allign="left"/>
 
 
 ## Availability
