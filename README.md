@@ -36,6 +36,29 @@ The Idle Power Consumption image shows the consumption of all the components of 
 #### Video Tutorial:
 https://youtu.be/UaIIV4CaRA4
 
+
+
+
+### Battery Capacity Measurement
+The NanoCell-C3 board features the MAX17048 battery capacity measurement IC connected to the respective I2C pins. As there is not complete support for this IC in the [ESPHome](https://esphome.io/index.html), you need to add it as a custom [ESPHome Component](https://esphome.io/components/sensor/custom)
+
+#### I2C Pins of the NanoCell-C3 board
+| Function | Pin No |
+|----------|--------|
+| SDA      | 2      |
+| SCL      | 3      |
+
+#### Setup process
+Inside the [Home Assistant Setup](https://github.com/Frapais/NanoCell-C3/tree/main/Home%20Assistant%20Setup) folded, you will find a YAML file and a HEADER file.
+* First, you must copy the header file to your Home Assistant under "/config/esphome/custom_components/MAX17048_component.h".
+* Next, you have to create a new ESP32-C3 device from the ESPHome plugin, as described above. (If you haven't already).
+* Inside the corresponding YAML file, you must paste the contents of this repo's [YAML]() file, replacing the "***" with your corresponding values.
+* 
+Your YAML file needs to import the "MAX17048_component.h" file in the "includes" section, as well as the "Wire" library in the "libraries section.
+Next, you can add an i2c sensor using the "custom" platform and include the corresponding "lambda" section to get the values from the MAX17048 Battery Measurement IC.
+
+
+
 ## Availability
 You can get the assembled boards in my [Tindie](https://www.tindie.com/products/frapais/nanocell-c3-v20-beta/), [Etsy](https://www.etsy.com/listing/1679895323/nanocell-c3-v2-beta?ref=listings_manager_grid), and [Elecrow](https://www.elecrow.com/nanocell-c3.html) stores. Note that on Elecrow, you will find the newest version 2.1 which improves several aspects of the board.
 
