@@ -12,6 +12,13 @@ NanoCell-C3 is a development board using an ESP32 microcontroller, intended -but
 * Charging and USB-power LED indicators
 * 2.54mm pin headers breaking out all the pins of ESP32-C3, as well as the USB, battery, and LDO voltage.
 
+### Tests
+| Idle Power Consumption: 66.1μA                                                                                                                          | Max Charging Current: 464mA                                                                                         | VCC Output @ 4.2V input: 3.356V                                                                                       | VCC Output @ 3V input: 3.359V                                                                                       |
+|-------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| <img src="https://github.com/Frapais/NanoCell-C3/blob/main/Tests/Idle%20consumption%20at%204.2V.jpg" alt="Idle Power Consumption" width="300"/> | <img src="https://github.com/Frapais/NanoCell-C3/blob/main/Tests/Max%20charging%20current.jpg" width="300"/> | <img src="https://github.com/Frapais/NanoCell-C3/blob/main/Tests/VCC%20voltage%20at%204.2V.jpg" width="300"/> | <img src="https://github.com/Frapais/NanoCell-C3/blob/main/Tests/VCC%20voltage%20at%203V.jpg" width="300"/> |
+
+The Idle Power Consumption image shows the consumption of all the components of the board except the ESP32 module, as its consumption fluctuates depending on the tasks it's running. Therefore, if you want to calculate the battery life of your project, you should expect at least 66μA of current, in addition to the current consumption of the ESP32 module.
+
 ### Initial Home Assistant setup
 #### Requirements:
 * Access to Home Assistant Dashboard
