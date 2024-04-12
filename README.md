@@ -3,6 +3,8 @@
 This is the repository of my **NanoCell-C3** project, which includes an ESP32 development board I made to simplify the creation of small battery-powered devices for use with Home Assistant and ESPHome.
 | <img src="https://github.com/Frapais/NanoCell-C3/blob/main/PCB/2024-02-17T16_10_27.754Z-2024-02-04%20004.jpg" alt="Photo 1" width="600"/> | <img src="https://github.com/Frapais/NanoCell-C3/blob/main/PCB/2024-02-17T16_10_27.754Z-2024-02-17%20009.jpg" alt="Photo 2" width="600"/> |
 |-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| <img src="https://github.com/Frapais/NanoCell-C3/blob/main/PCB/Screenshot%20from%202024-04-12%2010-49-21.png" alt="Pinout" width="600"/> | <img src="https://github.com/Frapais/NanoCell-C3/blob/main/PCB/Screenshot%20from%202024-04-12%2010-06-56.png" alt="Dimensions" width="600"/> |
+
 
 ## Description
 ### Hardware
