@@ -9,7 +9,7 @@ This is the repository of my **NanoCell-C3** project, which includes an ESP32 de
 ## Description
 ### Hardware
 #### Main Features
-* Li-ion/Li-po battery charging / protection ICs
+* Li-ion/Li-po battery charging & protection ICs
 * Accurate battery capacity measurement IC, accessible via I2C on pins 2 and 3.
 * USB Type-C port for charging and uploading firmware
 * RESET and BOOT pushbuttons
