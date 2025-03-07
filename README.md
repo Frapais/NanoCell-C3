@@ -64,7 +64,7 @@ Next, you can add an i2c sensor using the "custom" platform and include the corr
 
 
 ## Availability
-You can get the assembled boards in my [Tindie](https://www.tindie.com/products/frapais/nanocell-c3-v20-beta/), [Etsy](https://www.etsy.com/listing/1679895323/nanocell-c3-v2-beta?ref=listings_manager_grid), and [Elecrow](https://www.elecrow.com/nanocell-c3.html) stores.
+You can get the assembled boards in my [Tindie](https://www.tindie.com/products/frapais/esp32-devkit-nanocell-c3/), [Etsy](https://www.etsy.com/listing/1679895323/nanocell-c3-v2-beta?ref=listings_manager_grid), and [Elecrow](https://www.elecrow.com/nanocell-c3.html) stores.
 
 <a href="https://www.tindie.com/stores/frapais/?ref=offsite_badges&utm_source=sellers_Frapais&utm_medium=badges&utm_campaign=badge_large"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-larges.png" alt="I sell on Tindie" width="200" height="104" allign="left"></a>
 
