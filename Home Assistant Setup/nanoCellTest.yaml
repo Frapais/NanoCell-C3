@@ -1,8 +1,6 @@
 esphome:
   name: nanocell
   friendly_name: NanoCell
-  includes:
-    - /config/esphome/custom_components/MAX17048_component.h
   libraries:
     - "Wire"
 
@@ -38,22 +36,13 @@ i2c:
   sda: 2
   scl: 3
   scan: True
+  id: bus_a
 
-# Example configuration entry
 sensor:
-- platform: custom
-  lambda: |-
-    auto my_sensor = new  MAX17048Sensor();
-    App.register_component(my_sensor);
-    return {my_sensor->voltage_sensor, my_sensor->percentage_sensor, my_sensor->rate_sensor};
-
-  sensors:
-  - name: "Battery Voltage"
-    unit_of_measurement: V
-    accuracy_decimals: 2
-  - name: "Battery Percentage"
-    unit_of_measurement: '%'
-    accuracy_decimals: 2
-  - name: "Discharge Rate"
-    unit_of_measurement: '%/h'
-    accuracy_decimals: 2
+  - platform: max17043
+    id: max17043_id
+    i2c_id: bus_a
+    battery_voltage:
+      name: "Battery Voltage"
+    battery_level:
+      name: "Battery"
